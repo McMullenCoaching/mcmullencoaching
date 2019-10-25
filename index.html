@@ -342,27 +342,27 @@
         <p>Hillsborough, NC 27278</p>
     </div>
     <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-        <form class="padding col-xs-12 col-sm-12 col-md-12 col-lg-10 col-xl-8" id="contact-form" method="post" action="Email_Form_Handler.php">
+        <form class="padding col-xs-12 col-sm-12 col-md-12 col-lg-10 col-xl-8" id="contact-form" method="Post" action="Email_Form_Handler.php">
 
           <div class="form-group row">
             <label class="sr-only" for="colFormLabel">First Name:</label>
-            <input type="text" class="form-control" placeholder="First name" id="colFormLabel">
+            <input type="text" name="myFirstName" class="form-control" placeholder="First name" id="colFormLabel">
           </div>
           <div class="form-group row">
             <label class="sr-only" for="colFormLabel">Last Name:</label>
-            <input name="firstname" type="text" class="form-control" placeholder="Last name" id="colFormLabel">
+            <input name="myLastName" type="text" class="form-control" placeholder="Last name" id="colFormLabel">
           </div>
 
           <div class="form-group row">
             <label class="sr-only" for="colFormLabel">Email address:</label>
-            <input name="lastname" type="email" placeholder="Email" class="form-control" id="colFormLabel">
+            <input name="myEmail" type="email" placeholder="Email" class="form-control" id="colFormLabel">
           </div>
           <div class="form-group row">
               <label class="sr-only" for="colFormLabel">Message:</label>
-              <textarea name="message" class="form-control" placeholder="Please type your message here" id="colFormLabel" rows="3"></textarea>
+              <textarea name="myMessage" class="form-control" placeholder="Please type your message here" id="colFormLabel" rows="3"></textarea>
             </div>
             <div class="btn">
-          <div class="button" type="submit" name="" id="" value="SEND MESSAGE">
+          <div class="button" type="submit" name="" id="" value="Send">
             <button class="btn btn-secondary">Submit</button>
           </div>
             </div>
