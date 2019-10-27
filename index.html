@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,12 +19,22 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js" type="text/javascript"></script> 
 <script src="jquery.localscroll.js" type="text/javascript"></script> 
-<script src="jquery.scrollTo.js" type="text/javascript"></script> 
-  
-
-  
- 
+<script src="jquery.scrollTo.js" type="text/javascript"></script>
 </head>
+
+<?php
+
+$_SESSION['username'] = "dani948a";
+echo $_SESSION['username'];
+
+if (!isset($_SESSION['username'])) {
+  echo "You are not logged in!"
+} else {
+  echo "You are logged in!"
+}
+
+?>
+
     <div class="header_photo_container"><img class="header_photo" src="https://images.pexels.com/photos/533923/pexels-photo-533923.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=450&w=940">
     <div class="header_logo">
         <div class="left_bar"></div>
