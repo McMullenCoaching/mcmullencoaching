@@ -19,7 +19,7 @@
 
     $headers = "Reply-To: $visitor_email\r\n";
 
-    mail($to,$email_subject,$message,$headers);
+    mail($to,$email_subject,$message,,$headers);
 
-    header("Location: index.html");
+    header("Location: McMullen Coaching Site Total.html");
 ?>

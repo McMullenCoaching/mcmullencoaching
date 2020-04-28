@@ -1,2 +1,2 @@
-# mcmullencoaching
-Main site for mcmullen coaching site
+# MainSite
+Contains all the content for the framework of the website. HTML, CSS, JavaScript, etc.

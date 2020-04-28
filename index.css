@@ -418,8 +418,8 @@ mark,
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #fff;
-  border: 1px solid #dee2e6;
-  border-radius: 0.25rem;
+  border: 3px solid #dee2e6;
+  border-radius: 50%;
   max-width: 100%;
   height: auto; }
 
@@ -7291,30 +7291,31 @@ figure {
   padding-bottom: 10px;
   }
    
-  /* Image for Parallax Section */ 
-  .paralsec {
-  background-image: url("https://img.webnots.com/2017/05/parallax.jpg");
-  height: 450px;
-  object-fit: none; /* Do not scale the image */
-  object-position: center; /* Center the image within the element */
-  max-height: 450px;
-  margin-bottom: 1rem;
-  }
-   
-  .paralsec1 {
-  background-image: url("https://img.webnots.com/2017/05/parallax1.jpg");
-  height: 450px;
-  object-fit: none; /* Do not scale the image */
-  object-position: center; /* Center the image within the element */
-  max-height: 450px;}
-   
-  .paralsec2 {
-  background-image: url("https://img.webnots.com/2015/11/parallax2.jpg");
-  height: 450px;
-  object-fit: none; /* Do not scale the image */
-  object-position: center; /* Center the image within the element */
-  max-height: 450px;
-  }
+  /* Image for Parallax Section */
+.paralsec {
+    background-image: url("file:///Users/derekmcmullen/Documents/GitHub/MainSite/Canva%20-%20Remote%20working%20objects%20flatlay.jpg");
+    height: 450px;
+    object-fit: none; /* Do not scale the image */
+    object-position: center; /* Center the image within the element */
+    max-height: 450px;
+    margin-bottom: 1rem;
+}
+
+.paralsec1 {
+    background-image: url("file:///Users/derekmcmullen/Documents/GitHub/MainSite/Canva%20-%20Woman%20Using%20Computer%20Laptop.jpg");
+    height: 400px;
+    object-fit: fill; /* Do not scale the image */
+    object-position: center; /* Center the image within the element */
+    max-height: 450px;
+}
+
+.paralsec2 {
+    background-image: url("file:///Users/derekmcmullen/Documents/GitHub/MainSite/Canva%20-%20Remote%20working%20objects%20flatlay.jpg");
+    height: 450px;
+    object-fit: none; /* Do not scale the image */
+    object-position: center; /* Center the image within the element */
+    max-height: 450px;
+}
    
   /* Add more images for more sections */
    
