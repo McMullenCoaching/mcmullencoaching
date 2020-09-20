@@ -1,8 +1,18 @@
 <?php
-    $firstname = $_POST['firstname'];
-    $lastname = $_POST['lastname'];
-    $visitor_email = $_POST['email'];
-    $message = $_POST['message'];
+
+$firstname = $lastname = $visitor_email = $message = "";
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $firstname = handlerSec($_POST['firstname']);
+    $lastname = handlerSec($_POST['lastname']);
+    $visitor_email = handlerSec($_POST['email']);
+    $message = handlerSec($_POST['message']);
+}
+    function handlerSec($emailhandlerdata) {
+        $emailhandlerdata = trim($emailhandlerdata);
+        $emailhandlerdata = stripslashes($emailhandlerdata);
+        $emailhandlerdata = htmlspecialchars($emailhandlerdata);
+        return $emailhandlerdata;
+    }
 
     $email_from = 'mcmullencoaching-inquiries@gmail.com';
 
@@ -19,7 +29,7 @@
 
     $headers = "Reply-To: $visitor_email\r\n";
 
-    mail($to,$email_subject,$message,,$headers);
+    mail($to,$email_subject,$message,$headers);
 
     header("Location: McMullen Coaching Site Total.html");
 ?>
